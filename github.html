@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Github</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="addUsersForm">
+				<input id="userName" type="text">
+				<button onclick="findUsers()">Add</button>
+				<p class="errorMessage">User Not Found</p>
+			</div>
+			<div class="sortByOptions">
+				<p>
+					Sort by:
+					<a href="javascript:void(0)" onclick="sortByName()">Name</a>
+					<a href="javascript:void(0)" onclick="sortByLocation()">Location</a>
+					<a href="javascript:void(0)" onclick="sortByFollowers()">Followers</a>
+				</p>
+			</div>
+			<div class="userList"></div>
+		</div>
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+body, html{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+	max-width:1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.addUsersForm{
+	margin-top: 15px;
+	padding: 15px 0;
+	border-bottom: 1px solid #efefef;
+}
+
+.addUsersForm input{
+	line-height: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+    outline: none;
+}
+
+.addUsersForm button{
+	height: 32px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    background: #428bca;
+    outline: none;
+    cursor: pointer;
+}
+
+.addUsersForm .errorMessage{
+	display: inline-block;
+    margin:0 0 0 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d9534f;
+}
+
+.sortByOptions{
+	padding: 10px 0;
+	font-size: 12px;
+}
+
+.sortByOptions p{
+	margin: 0;
+	color: #333;
+}
+
+.sortByOptions p a{
+	text-decoration: none;
+	color: #333;
+	position: relative;
+    padding: 0 12px;
+}
+
+.sortByOptions p a.active{
+	color: #5bc0de;
+}
+
+.sortByOptions p a.active.asc:after, .sortByOptions p a.active.desc:after{
+	content:'';
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	position: absolute;
+    top: 4px;
+    right: 0;
+}
+.sortByOptions p a.active.desc:after{
+	border-top: 4px solid #428bca;
+}
+
+.sortByOptions p a.active.asc:after{
+	border-bottom: 4px solid #428bca;
+}
+
+.userList{
+	padding: 15px 0;
+}
+
+.userList > ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.userList > ul > li{
+	width: 25%;
+	display: inline-block;
+    padding: 0 15px 20px;
+    box-sizing:border-box;
+    float: left;
+}
+
+.userList > ul > li:nth-child(4n){
+    padding-right: 0;
+}
+.userList > ul > li:nth-child(4n+1){
+    padding-left: 0;
+}
+
+.userList > ul > li > a{
+	display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+.userList > ul > li > a:hover{
+    text-decoration: underline;
+    border: 1px solid #5bc0de;
+}
+
+.userList > ul > li > a img{
+	max-width: 100%;
+}
+
+.cutUser{
+	position: absolute;
+    color: #333;
+    right: 15px;
+    top: 11px;
+    font-size: 14px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.userDetails{
+	padding: 15px 5px;
+}
+
+.userDetails p{
+	margin: 0 0 10px;
+}
+
+.userDetails p:first-child{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.userDetails p:last-child{
+	margin: 0;
+}
